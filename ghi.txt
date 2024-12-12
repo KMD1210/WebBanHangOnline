@@ -1,0 +1,17 @@
+Select * from AspNetUserLogins
+Select * from [dbo].[AspNetUserRoles]
+Select * from [dbo].[AspNetUsers]
+Select * from [dbo].[tb_Adv]
+Select * from [dbo].[tb_Category]
+Select * from [dbo].[tb_Contact]
+Select * from [dbo].[tb_News]
+Select * from [dbo].[tb_Order]
+Select * from [dbo].[tb_OrderDetail]
+Select * from [dbo].[tb_Posts]
+Select * from [dbo].[tb_Product]
+Select * from [dbo].[tb_ProductCategory]
+Select * from [dbo].[tb_ProductImage]
+Select * from [dbo].[tb_Subscribe]
+Select * from [dbo].[tb_SystemSetting]
+Select * from [dbo].[ThongKes]
+

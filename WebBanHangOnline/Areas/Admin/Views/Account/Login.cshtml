@@ -1,0 +1,46 @@
+﻿@model WebBanHangOnline.Models.LoginViewModel
+@{
+    ViewBag.TieuDe = "Login";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutLogin.cshtml";
+
+
+}
+<div class="card-body login-card-body">
+    <h3 class="text-center mb-4">Admin</h3>
+    <p class="text-center login-box-msg">Đăng nhập để bắt đầu phiên của bạn</p>
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+        <div class="input-group">
+            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control", @placeholder = "Tài khoản" })
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            @Html.PasswordFor(x => x.Password, new { @class = "form-control", @placeholder = "Mật khẩu" })
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <div class="icheck-primary">
+                    @Html.CheckBoxFor(x => x.RememberMe)
+                    <label for="remember">Nhớ</label>
+                </div>
+            </div>
+            <div class="col-6 text-right">
+                <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+            </div>
+        </div>
+    }
+    <p class="mb-1 text-center">
+        <a href="#">Quên mật khẩu</a>
+    </p>
+</div>

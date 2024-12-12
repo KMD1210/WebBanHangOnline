@@ -1,0 +1,66 @@
+﻿/* 1. Định dạng nền của trang */
+body {
+    background-color: #f4f6f9; /* Màu nền sáng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Font chữ */
+}
+
+/* 2. Định dạng form đăng nhập */
+.login-card-body {
+    background: #ffffff; /* Màu trắng */
+    padding: 20px 30px;
+    border-radius: 10px; /* Góc bo tròn */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    max-width: 400px; /* Chiều rộng tối đa */
+    width: 100%;
+}
+
+/* 3. Định dạng ô input */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group-text {
+    background-color: #f0f2f5; /* Màu nền nhạt */
+    border: none;
+    border-radius: 0 5px 5px 0; /* Góc bo cho nút cuối */
+}
+
+.form-control {
+    border: none;
+    border-radius: 5px 0 0 5px; /* Góc bo cho ô input */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* 4. Định dạng nút đăng nhập */
+.btn-primary {
+    background-color: #007bff; /* Xanh biển */
+    border: none;
+    border-radius: 5px; /* Góc bo */
+    transition: background-color 0.3s ease; /* Hiệu ứng hover */
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Màu xanh đậm khi hover */
+    }
+
+/* 5. CheckBox */
+.icheck-primary label {
+    font-size: 0.9rem;
+    color: #555; /* Màu chữ nhạt */
+}
+
+/* 6. Liên kết */
+p a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+    p a:hover {
+        text-decoration: underline; /* Gạch chân khi hover */
+    }
